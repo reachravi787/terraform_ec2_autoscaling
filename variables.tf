@@ -2,10 +2,10 @@ variable region{
     default ="us-east-1"
 }
 variable access_key{
-    default = "AKIAIBDSIEZ333UE6ORQ"
+    default = ""
 }
 variable secret_key{
-    default = "tdkCOJjBVw2uyKEitpFRabA6fmGRK7fybvx9u+4y"
+    default = ""
 }
 variable image_id{
     default = "ami-0947d2ba12ee1ff75"
