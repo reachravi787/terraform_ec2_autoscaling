@@ -19,3 +19,4 @@ zip -r terraform_ec2_autoscaling.zip terraform_ec2_autoscaling'''
           }   
         }
 }
+)
