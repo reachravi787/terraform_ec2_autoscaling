@@ -1,6 +1,6 @@
 node {
     stage('git'){
-        git credentialsId: 'Github_ID', url: ' https://github.com/reachravi55/maven_demo.git'
+        git credentialsId: 'Github_ID', url: 'https://github.com/reachravi787/terraform_ec2_autoscaling'
     }
         stage ('upload to s3'){
        sh '''git clone https://github.com/reachravi787/terraform_ec2_autoscaling.git
