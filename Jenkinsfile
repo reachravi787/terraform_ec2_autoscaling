@@ -8,7 +8,10 @@ pipeline {
        }*/
         stage('git'){
             steps{
-            git branch: 'main', credentialsId: 'Github_s3', url: 'https://github.com/reachravi787/terraform_ec2_autoscaling.git'
+                sh '''mkdir terraform_ec2_autoscaling;
+                cd terraform_ec2_autoscaling'''
+                git branch: 'main', credentialsId: 'Github_s3', url: 'https://github.com/reachravi787/terraform_ec2_autoscaling.git'
+                sh '''cd ..'''
     }
         }
  
