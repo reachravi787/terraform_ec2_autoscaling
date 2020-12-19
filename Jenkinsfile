@@ -9,7 +9,7 @@ node {
     }
     stage ('zip repo'){
            script {
-                zip dir:'/var/lib/jenkins/workspace/Upload_to_S3/', glob:'', zipFile:'terraform_ec2_autoscaling.zip'  
+                zip dir:'/var/lib/jenkins/workspace/Upload_to_S3/terraform_ec2_autoscaling', glob:'', zipFile:'terraform_ec2_autoscaling.zip'  
            }
     }
     stage ('upload'){
