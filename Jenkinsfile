@@ -1,7 +1,7 @@
 pipeline {
     agent any 
-  /*  stages {
-       stage ('remove files'){
+    stages {
+       /*stage ('remove files'){
            steps {
                sh '''rm -rf terraform_ec2_autoscaling terraform_ec2_autoscaling.zip'''
            }
