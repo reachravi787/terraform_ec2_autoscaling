@@ -1,21 +1,22 @@
 pipeline {
     agent any 
-    stages {
+  /*  stages {
        stage ('remove files'){
            steps {
                sh '''rm -rf terraform_ec2_autoscaling terraform_ec2_autoscaling.zip'''
            }
-       }
+       }*/
         stage('git'){
             steps{
             git branch: 'main', credentialsId: 'Github_s3', url: 'https://github.com/reachravi787/terraform_ec2_autoscaling.git'
     }
         }
-    stage ('git clone'){
+ 
+/*    stage ('git clone'){
         steps {
        sh '''git clone https://github.com/reachravi787/terraform_ec2_autoscaling.git'''
     }
-    }
+    }*/
     stage ('zip repo'){
         steps {
            script {
