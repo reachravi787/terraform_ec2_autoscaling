@@ -12,7 +12,7 @@ node {
                 zip archive: true, dir:'/var/lib/jenkins/workspace/Upload_to_S3/terraform_ec2_autoscaling', glob:'', zipFile:'terraform_ec2_autoscaling.zip'  
            }
     }
-    stage ('upload'){
+    /*stage ('upload'){
         dir('/var/lib/jenkins/workspace/Upload_to_S3'){
             pwd();
             withAWS(region:'us-east-1', credentials: 'AWS_ID'){
@@ -21,6 +21,6 @@ node {
                 s3Upload(file:'terraform_ec2_autoscaling.zip', bucket:'ravi-backup-bucket', path:'terraform_ec2_autoscaling.zip');
             }
           }   
-        }
+        }*/
 }
 }
